@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Barbu's</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <!--<link rel="stylesheet" href="css/fonts.css">-->
+  <link rel="stylesheet" href="../css/style.css">
+  <!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+  
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+      <div class="header__part">
+        <div class="container">
+          <div class="header__flex">
+            <a class="logo" href="">
+              <img class="logo__image" src="../images/logo-barbus.jpg" alt="">
+              <span class="logo__title">Les Barbu's Glace & Roller Hockey</span>
+            </a>
+            <div class="menu">
+              <a class="menu__item" href=""><i class="icon-heart"></i> Favoris</a>
+              <a class="menu__item" id="yClickLa" href=""><i class="icon-mail"></i> Newsletter</a>
+              <a class="menu__item" href=""><i class="icon-check-circle"></i> Avis</a>
+              <button id="theme-switch" class="btn" type="button" aria-label="Changer le thème"><i class="icon-moon"></i></button>
+              <div class="menu__color-switcher">
+                <button id="theme-green" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+                <button id="theme-red" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+                <button id="theme-blue" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__part">
+        <div class="container">
+          <div class="submenu">
+            <a class="submenu__item submenu__item--current" href="">Voyages</a>
+            <a class="submenu__item" href="">Restaurants</a>
+            <a class="submenu__item" href="">Hôtels</a>
+            <a class="submenu__item" href="">Vols</a>
+            <a class="submenu__item" href="">Croisières</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="content">
+      <h1 class="content__title">Partir en voyage</h1>
+
+      <section class="slider">
+        <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
+        <button class="btn slider__btn" type="button" aria-label="Suivant">&gt;</button>
+      </section>
+
+      <section class="segment">
+        <h2 class="segment__title">Destinations</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/canyon.jpg" alt="">
+              <h3 class="card__title">Partir à l'aventure</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/city.jpg" alt="">
+              <h3 class="card__title">Partir à l'étranger</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/nature.jpg" alt="">
+              <h3 class="card__title">Promenade dans la nature</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/ocean.jpg" alt="">
+              <h3 class="card__title">Partir à la mer</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/road.jpg" alt="">
+              <h3 class="card__title">Road trip</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <img class="card__image" src="img/ski.jpg" alt="">
+              <h3 class="card__title">Partir à la montagne</h3>
+              <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, minima!</p>
+            </div>
+            <div class="card__action">
+              <button class="btn btn__like" type="button" aria-label="J'aime"><i class="icon-heart"></i></button> <a class="btn" href="">Découvrir</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="segment">
+        <h2 class="segment__title">Derniers commentaires</h2>
+        <div class="filters">
+          <span class="filter">
+            <input type="checkbox" name="rating" value="3" id="rating-3" checked>
+            <label for="rating-3">3 étoiles</label>
+          </span>
+          <span class="filter">
+            <input type="checkbox" name="rating" value="2" id="rating-2" checked>
+            <label for="rating-2">2 étoiles</label>
+          </span>
+          <span class="filter">
+            <input type="checkbox" name="rating" value="1" id="rating-1" checked>
+            <label for="rating-1">1 étoile</label>
+          </span>
+        </div>
+        <article class="review" data-rating="3">
+          <h3 class="review__title">Térébenthine</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse provident velit perspiciatis nemo rem assumenda dolores quam maiores corporis?</p>
+        </article>
+        <article class="review" data-rating="2">
+          <h3 class="review__title">Périclès</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi a iusto molestias voluptatum expedita exercitationem id modi, neque similique ipsum, quam sit minima quo reiciendis! Ipsum temporibus adipisci praesentium quae!</p>
+        </article>
+        <article class="review" data-rating="1">
+          <h3 class="review__title">Zoël</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti at ex pariatur maxime inventore non, quae facere, doloremque provident ratione iure adipisci sequi doloribus repellat natus repellendus quo quam libero.</p>
+        </article>
+        <article class="review" data-rating="3">
+          <h3 class="review__title">Walbert</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, doloremque.</p>
+        </article>
+        <article class="review" data-rating="3">
+          <h3 class="review__title">Glannon</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quos quas repellat? Odio quam ea repellat at recusandae illo quibusdam, reprehenderit similique cumque earum nam, aperiam quo qui culpa autem quaerat assumenda sapiente, maxime praesentium. Aut iusto at hic quaerat.</p>
+        </article>
+        <article class="review" data-rating="1">
+          <h3 class="review__title">Pétunia</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit.</p>
+        </article>
+        <article class="review" data-rating="3">
+          <h3 class="review__title">Lotus</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum et sit fuga laboriosam accusantium consequuntur est reprehenderit a sunt vero voluptates tempora cum delectus unde eveniet possimus veniam dignissimos, officiis autem dicta corrupti. Quasi fugit nobis sint voluptatum praesentium nihil, aliquid voluptatibus veritatis, illum qui aut obcaecati beatae earum quibusdam.</p>
+        </article>
+        <article class="review" data-rating="3">
+          <h3 class="review__title">Caméo</h3>
+          <div class="review__stars">
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolorem dolores veniam!</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+ <aside class="newsletter">
+    <button class="newsletter__close btn" aria-label="Fermer" type="button">&Cross;</button>
+    <h2 class="newsletter__title">Inscription à la newsletter</h2>
+    <form action="" method="post">
+      <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com" aria-label="Votre email">
+      <button class="btn" type="submit">Valider</button>
+    </form>
+  </aside> 
+
+  <footer class="footer">
+    <div class="container">
+      <p>Toute ressemblance avec d'autres contenus est purement fortuite.</p>
+    </div>
+  </footer>
+  <!--<script src="./js/app.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/slide.js"></script>
+  <script src="./js/newsLetters.js"></script>
+  <script src="./js/messages.js"></script>
+  <script src="./js/destinations.js"></script>
+  <script src="./js/review.js"></script>-->
+
+
+  <!--<script>
+    if(false){
+        const sectionSlider = document.querySelector("section.slider");
+      // Je crée mon span
+      const span = document.createElement("span");
+      // Je lui met du texte
+      span.textContent = "Bonjour !";
+      span.id = "mon-id-span";
+
+      // Je l'ajoute au DOM dans sectionSlider
+      // sectionSlider.append(span); // ici a la fin
+      sectionSlider.prepend(span); // ici au debut
+    }
+    
+
+
+      if(false){
+            //Accès au DOM
+
+      // Recherche par id
+      const themeSwitch = document.getElementById('theme-switch');
+      // Recherche par class (retourne un tableau)
+      const items = document.getElementsByClassName("menu__item");
+      // Recherche par nom de balise (retourne un tableau)
+      const itemsByTag = document.getElementsByTagName("nav")
+
+
+      // Recherche par sélecteur (chaine comme en css)
+      document.querySelector("#ma-section-principale section.segment") // Retoure un elemnet
+      document.querySelectorAll("#ma-section-principale section.segment"); // Retourne un tabelau
+
+      /**
+      * MODIFICATION D'UN ELEMENT 
+      */
+      const item = document.querySelector(".container section.segment");
+      console.log(item);
+
+      // Ajout d'un id
+      item.id = "mon-nouvel-id";
+      console.log(item.id);
+
+      // Ajout d'une classe
+      item.className = item.className + " ma-nouvelle-classe";
+
+      // Meilleure gestion des class
+      item.classList.add("test");
+      item.classList.remove("ma-nouvelle-classe");
+      item.classList.toggle("class-toggle");
+      if ( item.classList.contains("test") ) {
+        console.log("oep");
+      }
+
+      //const h1 = document.getElementsByClassName("content__title");
+
+      /**
+      * MODIFICATION D'UN ELEMENT 
+      */
+      //const item = document.querySelector(".container section.segment");
+      console.log(item);
+    
+      // Ca on peut pas car const
+      // item = null;
+
+      // Ajout d'un id (ca on peut)
+      item.id = "mon-nouvel-id";
+      console.log(item.id);
+
+      // Ajout d'une classe
+      item.className = item.className + " ma-nouvelle-classe";
+
+      // Meilleure gestion des class
+      item.classList.add("test");
+      item.classList.remove("ma-nouvelle-classe");
+      item.classList.toggle("class-toggle");
+      if ( item.classList.contains("test") ) {
+        console.log("oep");
+      }
+
+      // Set attribute pour les autres attributs
+      item.setAttribute("style", "color:red");
+      item.setAttribute("id", "color");
+      console.log( item.getAttribute("style") );
+
+      // On récupère tous les élément savec la classe content__title
+      const h1s = document.querySelectorAll(".content__title");
+      const h1 = h1s[0]
+
+      // Je veux changer le titre
+      h1.textContent = "Mon nouveau titre !";
+      h1.innerHTML = "<i style='color: red'>Mon autre titre :)</i>";
+      // Ca ne fonctionne pour du html ou autre type non string
+      // h1.textContent = "<i style='color: red'>Mon autre titre :)</i>";
+
+      console.log(h1);
+    }
+     
+
+
+  </script>-->
+
+</body>
+</html>
