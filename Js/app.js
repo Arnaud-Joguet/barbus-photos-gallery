@@ -5,7 +5,7 @@
  const app = {
 
     init: function() {
-        //theme.init();
+        theme.init();
         slider.init();
     },
 }

@@ -69,6 +69,7 @@
   /* top */
   .header__part {
     border-bottom: var(--border-normal);
+    background-color: #dada37;
   }
   
   .header__flex {

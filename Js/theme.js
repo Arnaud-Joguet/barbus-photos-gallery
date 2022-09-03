@@ -46,8 +46,6 @@
 
     changeTheme: function () {
 
-        //const body = document.getElementsByTagName("body")[0];
-        //mis en propriété car modif sur le body aussi dans les themes de couleurs
         //au click le toggle ajoute ou enlève la class theme-dark qui fait passer la page en mode sombre.
         theme.body.classList.toggle("theme-dark");
 
@@ -67,23 +65,6 @@
         theme.changeColorTheme(themeColor);
         //console.log(event.currentTarget.id);
         
-        
-        /*
-        *changement de theme, méthode moins optimisées car bug le theme dark
-        *le but est de gérer l'ajout de plusieurs class de couleur différentes qui bug le CSS
-        *méthode 1:
-        *on enlève les anciennes class
-        document.body.className ="";
-        document.body.classList.add(themeColor);
-        *méthode 2:
-        const oldColor = document.body.classList;
-        if (oldColor.length >0) {
-            document.body.classList.replace(oldColor,themeColor);
-        }
-        else {
-            document.body.classList.add(themeColor);
-        }
-        */
           
     },
     changeColorTheme: function (themeColor) {
@@ -100,19 +81,16 @@
           // Ajout de la classe au body
           document.body.classList.add(themeColor);
             //changement logo
-        const logoSrc = `img/logo-${themeColor}.png`;
+        //const logoSrc = `img/logo-${themeColor}.png`;
           
-        const logoColor = document.getElementsByClassName("logo__image")[0];
-        logoColor.src=logoSrc;
+        //const logoColor = document.getElementsByClassName("logo__image")[0];
+        //logoColor.src=logoSrc;
         
         //sauvegarde des préférences
         localStorage.setItem("theme-color", themeColor);
     }
 }
 
- //j'appel mon fichier JS dès la fin du chargement du DOM avant chargement complet CSS et IMG 
- //document.addEventListener("DOMContentLoaded", theme.init);
- //init faite dans app.init
 
 
  
