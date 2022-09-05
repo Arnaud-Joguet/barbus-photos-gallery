@@ -1,11 +1,9 @@
 /**
  * module dark-thème
- *  + thèmes de couleur.
  */
 
  const theme = {
     //1. je déclare les propriétées
-    //la variable body est en  propriétée, car elle sert pour passer du mode lumineux au mode dark et aussi pour changer les modes couleurs.
     body: document.getElementsByTagName("body")[0],
     //pour init la couleur de theme avt tte 1ère visite
     themeColor: null,
@@ -18,7 +16,6 @@
         // la fonction handleClickSwitch s'éxécute seulement au click
         btnSwitch.addEventListener("click" ,theme.handleClickSwitch);
 
-        
         //pose d'écouteur sur les changements de thèmes de couleurs
         const buttonColorClick = document.querySelectorAll(".menu__color-switcher>button");
         //console.log(buttonColorClick);
@@ -26,7 +23,6 @@
         for (button of buttonColorClick) {
             button.addEventListener("click",theme.handleThemeColorClick)
         }
-        
         
         // pour savoir le theme par défault choisi et le sauvegarder dans le local storage.
         //et passer tout de suite en mode dark si c'est le dernier theme utilisé avant fermeture du navigateur.
@@ -54,7 +50,6 @@
         const isdarkTheme= document.body.classList.contains("theme-dark");
         localStorage.setItem("theme-dark",isdarkTheme);
         
-        
     },
         //Pour les themes de couleur.
     handleThemeColorClick: function(event) {
@@ -65,8 +60,8 @@
         theme.changeColorTheme(themeColor);
         //console.log(event.currentTarget.id);
         
-          
     },
+
     changeColorTheme: function (themeColor) {
 
         //pour init avt la 1ère visite avt sauvegarde des préférences.
@@ -80,12 +75,7 @@
           }
           // Ajout de la classe au body
           document.body.classList.add(themeColor);
-            //changement logo
-        //const logoSrc = `img/logo-${themeColor}.png`;
-          
-        //const logoColor = document.getElementsByClassName("logo__image")[0];
-        //logoColor.src=logoSrc;
-        
+
         //sauvegarde des préférences
         localStorage.setItem("theme-color", themeColor);
     }
@@ -93,4 +83,3 @@
 
 
 
- 

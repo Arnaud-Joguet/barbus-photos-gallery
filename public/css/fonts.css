@@ -1,7 +1,7 @@
 /* text */
 @font-face {
     font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans.woff') format('woff');
+    src: url('../../fonts/NotoSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
   
   @font-face {
     font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans-Bold.woff') format('woff');
+    src: url('../../fonts/NotoSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
   
   @font-face {
     font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans-Italic.woff') format('woff');
+    src: url('../../fonts/NotoSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -26,7 +26,7 @@
   /* icons */
   @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.woff?eu0ody') format('woff');
+    src:  url('../../fonts/icomoon.woff?eu0ody') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
