@@ -34,7 +34,7 @@
   
   [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon' !important;
-    speak: never;
+    speak-as: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
