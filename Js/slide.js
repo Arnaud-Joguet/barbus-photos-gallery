@@ -48,7 +48,7 @@
             }
     
             //je met la source de mon img
-            img.src = "../images/" + image.src;
+            img.src = "images/" + image.src;
             //le alt
             img.alt = "images du slider";
     
