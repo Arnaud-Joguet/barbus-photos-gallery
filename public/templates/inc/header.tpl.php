@@ -4,7 +4,8 @@ $nav = [
 	"L'équipe" =>"./l_equipe.php",
 	"Contact" => "./contact.php",
   "Mentions légales" => "./mentions_legales.php",
-]
+];
+
 ?>
 
 <!DOCTYPE html>
