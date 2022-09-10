@@ -29,7 +29,7 @@ $nav = [
       <div class="header__part">
         <div class="container">
           <div class="header__flex">
-            <a class="logo" href="">
+            <a class="logo" href="./index.php">
               <img class="logo__image" src="images/logo-barbus.jpg" alt="logo barbus">
               <span class="logo__title">Les Barbu's Glace & Roller Hockey</span>
             </a>
@@ -53,7 +53,7 @@ $nav = [
             <?php 
             foreach($nav as $label => $lien):
             ?>
-            <a class="submenu__item " href="<?= $lien ?>"><?= $label ?></a>
+            <a class="submenu__item " href="<?= $lien ?>" ><?= $label ?></a>
             <?php endforeach ?>
             <!--
             <a class="submenu__item submenu__item--current" href="">L'équipe</a>
