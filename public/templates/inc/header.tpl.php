@@ -17,9 +17,9 @@ $nav = [
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script defer src="../js/app.js"></script>
-  <script defer src="../js/slide.js"></script>
-  <script defer src="../js/theme.js"></script>
+  <script defer src="../Js/app.js"></script>
+  <script defer src="../Js/slide.js"></script>
+  <script defer src="../Js/theme.js"></script>
   
 </head>
 <body>
